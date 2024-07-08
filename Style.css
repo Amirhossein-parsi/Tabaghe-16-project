@@ -1,7 +1,129 @@
-:root{
-    --Primary-color: #121212;
-}
 @font-face{
-    font-family: IranYekan;
+    font-family: Yekanbakh;
     src: url(./assets/fonts/YekanBakh.v2-6/web/woff2/YekanBakh-Regular.woff2);
 }
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    font-family: Yekanbakh;
+    background-color: var(--Primary-color);
+    color: #FFFFFF;
+    text-align: right;
+}
+:root{
+    font-size: 62.5%;
+    /* *************website colors************* */
+    --Primary-color: #121212;
+    --secondary-color: #FFFFFF33;
+    --trinary-color: #FFFFFF00;
+    --quaternary-color: #FFFFFF05;
+    --quinary-color: #00000000;
+    /* *************website paddings*********** */
+    /* Dynamic */
+  --padding-d-l-v: calc(2rem + 12vh);
+  --padding-d-l-h: calc(2rem + 12vw);
+
+  --padding-d-mc-v: calc(1rem + 4vh);
+  --padding-d-mc-h: calc(1rem + 4vw);
+
+  --padding-d-m-v: calc(1rem + 2vh);
+  --padding-d-m-h: calc(1rem + 2vw);
+
+  --padding-d-s-h: calc(1rem + 1vw);
+  --padding-d-s-v: calc(1rem + 1vh);
+
+  /* Static */
+  --padding-st-l-h: 3rem;
+  --padding-st-l-v: 2rem;
+
+  --padding-st-m-h: 2.5rem;
+  --padding-st-m-v: 1.5rem;
+
+  --padding-st-s-h: 2rem;
+  --padding-st-s-v: 1rem;
+  /* ***************font sizes*************** */
+    /* Dynmaic */
+    --font-size-d-lc: calc(3rem + 3.5vw);
+    --font-size-d-l: calc(2rem + 3vw);
+    --font-size-d-mc: calc(2rem + 2.5vw);
+    --font-size-d-m: calc(1rem + 2vw);
+    --font-size-d-sc: calc(1rem + 1.5vw);
+    --font-size-d-s: calc(1rem + 1vw);
+  
+    /* Static */
+    --font-size-st-xl: 4rem;
+    --font-size-st-lc: 3.5rem;
+    --font-size-st-l: 3rem;
+    --font-size-st-mc: 2.5rem;
+    --font-size-st-m: 2rem;
+    --font-size-st-sc: 1.5rem;
+    --font-size-st-s: 1rem;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/**************** Header style ***********/
+input[type="search"]{
+    border: none;
+    outline: none;
+}
+.header{
+    display: flex;
+    text-align: right;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 4rem;
+    align-items: center;
+}
+.header__nav{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    align-items: center;
+    font-size: var(--font-size-st-sc);
+    font-weight: 400;
+}
+.header__nav--logo{
+    height: 3.8rem;
+    width: 5rem;
+}
+.header__nav--logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.header__search{
+    position: relative;
+    display: flex;
+    width: 23rem;
+}
+.header__search::after{
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+.header__search--icon{
+    font-size: var(--font-size-st-m);
+    flex-grow: 1;
+}
+.header__search--bar{
+    flex-grow: 2;
+}
+.header__nav--links{
+    color: #FFFFFF;
+    transition: all 0.25s ease;
+}
+.header__nav--links:hover{
+    color: var(--secondary-color);
+}
+/***************** Header style end *************/
