@@ -76,6 +76,11 @@ a{
     background-image: linear-gradient(to bottom left,#FFFFFF05,#FFFFFF00);
     border: 1px solid linear-gradient(to bottom left, #FFFFFF33, #00000000);
 }
+.section-title{
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    font-weight: 900;
+}
 /**************** Header style ***********/
 input[type="search"]{
     border: none;
@@ -176,3 +181,25 @@ input[type="search"]{
     right: -2.5rem;
 }
 /****************** Down header style end ****************/
+/****************** icon list style *****************/
+.icon-list{
+    height: fit-content;
+    width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-d-m-h) var(--padding-d-m-v);
+    border-radius: 40px;
+    gap: 3rem;
+}
+.icon-list__icons{
+    height: 5rem;
+    display: flex;
+    gap: 7rem;
+}
+.icon-list__icons--icon{
+    width: 5rem;
+    height: 5rem;
+}
+/******************** icon list style end *********************/
