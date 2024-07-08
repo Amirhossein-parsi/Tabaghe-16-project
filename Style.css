@@ -7,10 +7,12 @@
 *::before{
     padding: 0;
     margin: 0;
+    text-align: right;
     font-family: Yekanbakh;
+}
+body{
     background-color: var(--Primary-color);
     color: #FFFFFF;
-    text-align: right;
 }
 :root{
     font-size: 62.5%;
@@ -62,16 +64,23 @@
     --font-size-st-s: 1rem;
 
 }
+/***************** general styles ***************/
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
 }
+.section-background{
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom left,#FFFFFF05,#FFFFFF00);
+    border: 1px solid linear-gradient(to bottom left, #FFFFFF33, #00000000);
+}
 /**************** Header style ***********/
 input[type="search"]{
     border: none;
     outline: none;
+    background-color: var(--Primary-color);
 }
 .header{
     display: flex;
@@ -102,6 +111,7 @@ input[type="search"]{
     position: relative;
     display: flex;
     width: 23rem;
+    background-color: var(--Primary-color);
 }
 .header__search::after{
     content: "";
@@ -115,6 +125,7 @@ input[type="search"]{
 .header__search--icon{
     font-size: var(--font-size-st-m);
     flex-grow: 1;
+    color: var(--secondary-color);
 }
 .header__search--bar{
     flex-grow: 2;
@@ -127,3 +138,41 @@ input[type="search"]{
     color: var(--secondary-color);
 }
 /***************** Header style end *************/
+/***************** Down Header style *************/
+.down-header{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10rem;
+}
+.down-header__sirosali{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 2rem 4rem;
+    row-gap: 2rem;
+    margin-right: 6rem;
+    flex-shrink: 0;
+    width: 40rem;
+    height: 45rem;
+
+}
+.down-header__sirosali--mini-title{
+    color: var(--secondary-color);
+    font-size: var(--font-size-d-sc);
+}
+.down-header__sirosali--title{
+    font-size: var(--font-size-d-mc);
+}
+.down-header__sirosali--para{
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+.down-header__gorgali{
+    position: relative;
+}
+.down-header__gorgali--img{
+    position: absolute;
+    bottom: 0;
+    right: -2.5rem;
+}
+/****************** Down header style end ****************/
