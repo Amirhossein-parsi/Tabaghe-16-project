@@ -1,3 +1,7 @@
 :root{
-    --Primary-color:
+    --Primary-color: #121212;
+}
+@font-face{
+    font-family: IranYekan;
+    src: url(./assets/fonts/YekanBakh.v2-6/web/woff2/YekanBakh-Regular.woff2);
 }
