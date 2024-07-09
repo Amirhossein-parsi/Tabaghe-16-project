@@ -7,10 +7,10 @@
 *::before{
     padding: 0;
     margin: 0;
-    text-align: right;
     font-family: Yekanbakh;
 }
 body{
+    text-align: right;
     background-color: var(--Primary-color);
     color: #FFFFFF;
 }
@@ -74,7 +74,7 @@ a{
 .section-background{
     border-radius: 10px;
     background-image: linear-gradient(to bottom left,#FFFFFF05,#FFFFFF00);
-    border: 1px solid linear-gradient(to bottom left, #FFFFFF33, #00000000);
+    /* box-shadow: 10px 10px 1px #babecc, -10px -10px 20px #FFFFFF00; */
 }
 .section-title{
     font-size: 2.2rem;
@@ -87,6 +87,7 @@ input[type="search"]{
     border: none;
     outline: none;
     background-color: var(--Primary-color);
+    text-align: right;
 }
 .header{
     display: flex;
@@ -233,6 +234,9 @@ input[type="search"]{
     grid-row: 2 / span 1;
     grid-column: 4 / span 1;
 }
+.g1 h3{
+    text-align: left !important;
+}
 .best-list__items--item{
     background: linear-gradient(72.83deg, #121212 2.11%, rgba(0, 0, 0, 0) 98.6%);
     border: 1px solid #FFFFFF33;
@@ -261,6 +265,9 @@ input[type="search"]{
     height: 3.5rem;
     line-height: 2rem;
 }
+.best-list__items--item__title span{
+    display: block;
+}
 .best-list__items--item__info{
     padding: 0 var(--padding-d-s-v);
     padding-top: 1.5rem;
@@ -280,3 +287,75 @@ input[type="search"]{
     font-size: 1.2rem;
 }
 /******************** best list style end ******************/
+/******************** list box style ******************/
+.list-box{
+    display: grid;
+    grid-template-columns: repeat(2,47rem);
+    grid-template-rows: repeat(4,10rem);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.list-box__title{
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+}
+.h1{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+.h2{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+.h3{
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+.h4{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+.h5{
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+}
+.h5{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+}
+.list-box__item{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: right;
+    border: #A1A1A1 1px solid;
+    padding-right: 2rem;
+}
+.list-box__item--img{
+    width: 10rem;
+    height: 7rem;
+    padding: 1.25rem var(--padding-st-s-v);
+}
+.list-box__item--img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.list-box__item--number{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.list-box__item--info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.list-box__item--info__guest{
+    font-size: 1.2rem;
+    color: #A1A1A1;
+    font-weight: 500;
+}
+/******************** list box style end ******************/
