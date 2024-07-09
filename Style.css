@@ -80,6 +80,7 @@ a{
     font-size: 2.2rem;
     line-height: 3.5rem;
     font-weight: 900;
+    text-align: center;
 }
 /**************** Header style ***********/
 input[type="search"]{
@@ -203,3 +204,79 @@ input[type="search"]{
     height: 5rem;
 }
 /******************** icon list style end *********************/
+/******************** best list style ******************/
+.best-list{
+    display: grid;
+    grid-template-columns: repeat(4,25rem);
+    grid-template-rows:  10rem 35rem;
+    justify-content: center;
+    gap: 2rem;
+}
+.best-list__title{
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    align-self: center;
+}
+.g4{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+.g3{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+.g2{
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+}
+.g1{
+    grid-row: 2 / span 1;
+    grid-column: 4 / span 1;
+}
+.best-list__items--item{
+    background: linear-gradient(72.83deg, #121212 2.11%, rgba(0, 0, 0, 0) 98.6%);
+    border: 1px solid #FFFFFF33;
+    border-radius: 15px;
+}
+.best-list__items--item__img{
+    width: 100%;
+    position: relative;
+}
+.best-list__items--item__img--thumbnail img{
+    width: 100%;
+}
+.best-list__items--item__img--play{
+    position: absolute;
+    z-index: 1;
+    top: 6rem;
+    left: 7rem;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+.best-list__items--item__title{
+    font-size: var(--font-size-st-sc);
+    padding: var(--padding-st-s-h) var(--padding-st-s-v);
+    padding-bottom: 0;
+    height: 3.5rem;
+    line-height: 2rem;
+}
+.best-list__items--item__info{
+    padding: 0 var(--padding-d-s-v);
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.best-list__items--item__info *{
+    color: #A1A1A1;
+    font-weight: 500;
+}
+.best-list__items--item__info--guest{
+    font-size: 1.4rem;
+}
+.best-list__items--item__info--time{
+    font-size: 1.2rem;
+}
+/******************** best list style end ******************/
