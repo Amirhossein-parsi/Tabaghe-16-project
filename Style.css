@@ -358,4 +358,30 @@ input[type="search"]{
     color: #A1A1A1;
     font-weight: 500;
 }
+.list-box__more{
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    align-self: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
 /******************** list box style end ******************/
+/******************** sponsors style ******************/
+.sponsors{
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin: 6rem auto;
+    padding: 2rem;
+    border-radius: 35px;
+}
+.sponsors__list{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+/******************** sponsors style end ******************/
