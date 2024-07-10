@@ -72,6 +72,14 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"]{
+    border: none;
+    background-color: #1A1A1A;
+    outline: none;
+}
 .section-background{
     border-radius: 10px;
     background-image: linear-gradient(to bottom left,#FFFFFF05,#FFFFFF00);
@@ -470,3 +478,57 @@ input[type="search"]{
     font-size: 2rem;
 }
 /******************** shorts style end ******************/
+/******************** Join Us section style ******************/
+.join{
+    width: 90rem;
+    height: 22rem;
+    display: flex;
+    border-radius: 35px;
+    flex-direction: row-reverse;
+    margin: var(--padding-d-mc-h) auto;
+}
+.join__desc{
+    padding: 2rem 6rem;
+    text-align: center;
+    flex-grow: 1;
+}
+.join__desc--title{
+    padding-bottom: 2rem;
+}
+.join__desc--para{
+    padding-bottom: 2rem;
+}
+.join__desc span{
+    display: block;
+}
+.join__img{
+    flex-grow: 1;
+}
+.join__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    opacity: 50%;
+}
+.join__desc--email{
+    display: flex;
+}
+.join__desc--email__input{
+    flex-grow: 2;
+    padding: 1.5rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.join__desc--email__sub{
+    flex-grow: 1;
+    background-color: black;
+    color: inherit;
+    border: none;
+    outline: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+/******************** Join Us section style end ******************/
