@@ -401,18 +401,27 @@ input[type="search"]{
     justify-content: space-around;
     align-items: center;
 }
+.sponsors__list--item{
+    filter: grayscale(100%);
+    transition: all 0.25s ease-in-out;
+}
+.sponsors__list--item:hover{
+    filter: grayscale(0%);
+}
 /******************** sponsors style end ******************/
 /******************** shorts style ******************/
 .shorts{
     display: grid;
     grid-template-columns: repeat(2,50rem);
-    grid-template-rows: 4rem 25rem 25rem;
+    grid-template-rows: 4rem 20rem 20rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
 }
 .shorts__title{
     grid-column: 1 / -1;
     grid-row: 1 / span 1;
+    align-self: center;
 }
 .child1{
     grid-row: 2 / span 1;
@@ -435,7 +444,7 @@ input[type="search"]{
     background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10 (3).png");
 }
 .shorts__links{
-    height: 75%;
+    height: 100%;
     display: flex;
     padding: 0 2rem;
     padding-left: 4rem;
