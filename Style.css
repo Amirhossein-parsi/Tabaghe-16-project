@@ -402,3 +402,62 @@ input[type="search"]{
     align-items: center;
 }
 /******************** sponsors style end ******************/
+/******************** shorts style ******************/
+.shorts{
+    display: grid;
+    grid-template-columns: repeat(2,50rem);
+    grid-template-rows: 4rem 25rem 25rem;
+    align-items: center;
+    justify-content: center;
+}
+.shorts__title{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+}
+.child1{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10.png");
+}
+.child2{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10 (2).png");
+}
+.child3{
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10 (1).png");
+}
+.child4{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10 (3).png");
+}
+.shorts__links{
+    height: 75%;
+    display: flex;
+    padding: 0 2rem;
+    padding-left: 4rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.shorts__links:hover{
+    transform: translateY(-5px);
+}
+.shorts__links--img{
+    height: 7rem;
+    width: 7rem;
+}
+.shorts__links--img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.shorts__links--title{
+    font-weight: 900;
+    font-size: 2rem;
+}
+/******************** shorts style end ******************/
