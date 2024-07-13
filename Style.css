@@ -64,6 +64,8 @@ body{
     --font-size-st-s: 1rem;
 
 }
+
+
 /***************** general styles ***************/
 ul{
     list-style: none;
@@ -91,6 +93,8 @@ input[type="number"]{
     font-weight: 900;
     text-align: center;
 }
+
+
 /**************** Header style ***********/
 input[type="search"]{
     border: none;
@@ -154,6 +158,8 @@ input[type="search"]{
     color: var(--secondary-color);
 }
 /***************** Header style end *************/
+
+
 /***************** Down Header style *************/
 .down-header{
     display: flex;
@@ -192,6 +198,8 @@ input[type="search"]{
     right: -2.5rem;
 }
 /****************** Down header style end ****************/
+
+
 /****************** icon list style *****************/
 .icon-list{
     height: fit-content;
@@ -214,6 +222,8 @@ input[type="search"]{
     height: 5rem;
 }
 /******************** icon list style end *********************/
+
+
 /******************** best list style ******************/
 .best-list{
     display: grid;
@@ -302,6 +312,8 @@ input[type="search"]{
     font-size: 1.2rem;
 }
 /******************** best list style end ******************/
+
+
 /******************** list box style ******************/
 .list-box{
     display: grid;
@@ -392,6 +404,8 @@ input[type="search"]{
     color: var(--secondary-color);
 }
 /******************** list box style end ******************/
+
+
 /******************** sponsors style ******************/
 .sponsors{
     width: 80rem;
@@ -417,6 +431,8 @@ input[type="search"]{
     filter: grayscale(0%);
 }
 /******************** sponsors style end ******************/
+
+
 /******************** shorts style ******************/
 .shorts{
     display: grid;
@@ -478,6 +494,8 @@ input[type="search"]{
     font-size: 2rem;
 }
 /******************** shorts style end ******************/
+
+
 /******************** Join Us section style ******************/
 .join{
     width: 90rem;
@@ -532,3 +550,63 @@ input[type="search"]{
     border-bottom-right-radius: 8px;
 }
 /******************** Join Us section style end ******************/
+
+
+/******************** footer style ********************/
+.footer{
+    width: 100rem;
+    height: 36rem;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 42rem 19rem 35rem;
+    grid-template-rows: 10rem 10rem 6rem;
+    gap: 2rem;
+    border-top: 3px solid var(--secondary-color);
+    justify-content: center;
+    margin: 0 auto;
+}
+.footer__about{
+    grid-row: 1 / span 2;
+    grid-column: 3 / 4;
+}
+.footer__about--para{
+    padding-right: 2rem;
+}
+.footer__about--head{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.footer__links{
+    grid-row: 1 / span 2;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 1rem;
+    padding: 2rem;
+    align-content:start;
+}
+.footer__icons{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+.footer__social{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+.footer__icons div,
+.footer__social div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    filter: grayscale(100%);
+}
+.footer__copyrights{
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    place-content: center;
+    place-self: center;
+}
