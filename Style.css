@@ -13,6 +13,9 @@ body{
     text-align: right;
     background-color: var(--Primary-color);
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 :root{
     font-size: 62.5%;
@@ -105,9 +108,11 @@ input[type="search"]{
 .header{
     display: flex;
     text-align: right;
+    width: 108.5rem;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 4rem;
+    justify-self: center;
     align-items: center;
 }
 .header__nav{
@@ -164,19 +169,20 @@ input[type="search"]{
 .down-header{
     display: flex;
     flex-direction: row-reverse;
-    margin: 10rem;
+    width: 107rem;
+    margin: 10rem 0;
 }
 .down-header__sirosali{
     display: flex;
     flex-direction: column;
     text-align: right;
     padding: 2rem 4rem;
-    row-gap: 2rem;
-    margin-right: 6rem;
+    row-gap: 1rem;
     flex-shrink: 0;
-    width: 40rem;
-    height: 45rem;
-
+    width: 38rem;
+    height: fit-content;
+    padding-bottom: 2rem;
+    box-shadow: 2px 3px 5px #020202;
 }
 .down-header__sirosali--mini-title{
     color: var(--secondary-color);
@@ -191,11 +197,16 @@ input[type="search"]{
 }
 .down-header__gorgali{
     position: relative;
+    width: 60rem;
+    height: 43rem;
+    margin-top: 4rem;
 }
 .down-header__gorgali--img{
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     bottom: 0;
-    right: -2.5rem;
+    left: -0.5rem;
 }
 /****************** Down header style end ****************/
 
@@ -585,6 +596,7 @@ input[type="search"]{
     display: flex;
     flex-direction: column;
     width: fit-content;
+    justify-self: end;
     gap: 1rem;
     padding: 2rem;
     align-content:start;
@@ -592,10 +604,20 @@ input[type="search"]{
 .footer__icons{
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .footer__social{
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer__icons--title,
+.footer__social--title{
+    align-self: end;
 }
 .footer__icons div,
 .footer__social div{
