@@ -1,3 +1,4 @@
+/******************** video-list style ********************/
 .video-list{
     width: 107rem;
     margin: 0 auto;
@@ -27,5 +28,117 @@
     border-radius: 25px;
 }
 .video-list__cathegory--item:hover{
+    border: #989898 solid 1px;
+}
+/******************** video-list style end ********************/
+/******************** videos style ********************/
+.videos{
+    width: 108rem;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3,35rem);
+    grid-template-rows: repeat(4,26rem) 5rem;
+    gap: 2rem;
+}
+.videos__video{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.videos__video--title{
+    font-weight: 700;
+    font-size: 16px;
+    padding-right: 1rem;
+    height: 10rem;
+}
+.videos__video--thumbnail{
+    height: 19rem;
+    width: 34rem;
+}
+.videos__video--thumbnail img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.videos__video--details{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.videos__video--details__guest{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #575757;
+}
+.videos__video--details__time{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #A1A1A1;
+}
+.chi1{
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+.chi2{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+.chi3{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+.chi4{
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+}
+.chi5{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+.chi6{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+.chi7{
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+}
+.chi8{
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+.chi9{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+.chi10{
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 1;
+}
+.chi11{
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+}
+.chi12{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+}
+.videos__page{
+    grid-row: 5 / -1;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    gap: 1.5rem;
+}
+.videos__page--number{
+    transition: all 0.25s ease;
+    border: transparent solid 1px;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
+.videos__page--number:hover{
     border: #989898 solid 1px;
 }
