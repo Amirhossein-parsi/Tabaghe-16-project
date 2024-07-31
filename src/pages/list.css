@@ -39,6 +39,8 @@
     grid-template-columns: repeat(3,35rem);
     grid-template-rows: repeat(4,26rem) 5rem;
     gap: 2rem;
+    margin: 2rem 0;
+    margin-bottom: 4rem;
 }
 .videos__video{
     background: none;
@@ -131,7 +133,8 @@
     justify-self: center;
     align-self: center;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 .videos__page--number{
     transition: all 0.25s ease;
@@ -142,3 +145,4 @@
 .videos__page--number:hover{
     border: #989898 solid 1px;
 }
+/******************** videos style end ********************/
