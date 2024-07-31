@@ -23,10 +23,12 @@
     height: 60rem;
     margin: auto;
     position: relative;
+    border: 5px;
 }
 .video_box video{
     width: 100%;
     height: 100%;
+    border: 5px;
 }
 .video_box__sponsor{
     width: 11.5rem;
@@ -52,3 +54,91 @@
     color: #E6E6E6;
 }
 /*************** video box style end *****************/
+/*************** details style *****************/
+.details{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3rem;
+}
+.details span{
+    display: block;
+    line-height: 2.8rem;
+}
+.details__desc{
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    height: 80rem;
+    margin-left: 2rem;
+}
+.details__desc--title{
+    display: flex;
+    align-self: flex-end;
+    gap: 1rem;
+    font-weight: 900;
+    font-size: 15px;
+}
+.details__desc--para{
+    font-weight: 400;
+    font-size: 14;
+    color: #989898;
+    text-align: justify;
+    word-break: keep-all;
+}
+.details__more{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.details__more--sponsors{
+    display: flex;
+    flex-direction: column;
+    width: 42rem;
+    height: 14.1rem;
+    gap: 3rem;
+    justify-content: center;
+}
+.details__more--sponsors__items{
+    display: flex;
+    justify-content: space-around;
+}
+.details__more--play-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.details__more--play-list__title{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+}
+.details__more--play-list__items{
+    display: flex;
+    justify-content: space-between;
+}
+.details__more--play-list__items--img{
+    width: 19.1rem;
+    height: 11rem;
+    border-radius: 5px;
+}
+.details__more--play-list__items--img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.details__more--play-list__items--details{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: end;
+}
+.details__more--play-list__items--details__title{
+    font-weight: 700;
+    font-size: 16px;
+}
+.details__more--play-list__items--details--more{
+    font-weight: 400;
+    font-size: 12px;
+}
