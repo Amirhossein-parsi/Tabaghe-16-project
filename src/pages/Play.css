@@ -1,0 +1,19 @@
+/*************** Ads style ****************/
+.Ads{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+.Ads__banner p{
+    width: fit-content;
+}
+.Ads__banner{
+    width: 51rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+}
+/*************** Ads style end ****************/
