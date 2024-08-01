@@ -18,6 +18,8 @@
     color: #A1A1A1;
 }
 /****************** title style end *****************/
+
+
 /****************** donation style *****************/
 .donation{
     width: 110rem;
@@ -66,3 +68,10 @@
     color: rgba(255, 255, 255, 1);
 }
 /****************** donation style end *****************/
+
+
+/****************** footer style ****************/
+.footer{
+    margin-top: 20rem !important;
+}
+/****************** footer style end ****************/
