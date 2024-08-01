@@ -163,10 +163,11 @@ color: #989898;
     margin-left: 33%;
     display: flex;
     flex-direction: column;
-    width: 60rem;
+    width: 57rem;
     height: 15.5rem;
     justify-content: center;
     border-radius: 25px !important;
+    margin-bottom: 8rem;
 }
 .others__title{
     align-self: flex-end;
@@ -175,6 +176,7 @@ color: #989898;
 }
 .others__items{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
 }
 /*************** others style end *****************/
