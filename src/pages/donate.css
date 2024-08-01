@@ -18,3 +18,51 @@
     color: #A1A1A1;
 }
 /****************** title style end *****************/
+/****************** donation style *****************/
+.donation{
+    width: 110rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.donation__method{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    align-items: space-between;
+}
+.donation__method--title{
+    font-size: 900;
+    font-size: 22px;
+}
+.donation__method--form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: right;
+    padding: 0 2rem;
+}
+.donation__border{
+    border-left: 1px solid rgba(73, 73, 73, 1);
+    border-right: 1px solid rgba(73, 73, 73, 1);
+}
+.donation input{
+    width: 32rem;
+    height: 5.4rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    text-align: right;
+    padding-right: 2rem;
+}
+.pay{
+    width: 9.5rem;
+    height: 5.5rem;
+    border-radius: 8px;
+    background-color: rgba(10, 10, 10, 1);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+}
+/****************** donation style end *****************/
