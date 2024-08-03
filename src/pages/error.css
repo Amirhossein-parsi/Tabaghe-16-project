@@ -1,0 +1,16 @@
+/************ error style ************/
+.error{
+    text-align: center;
+    margin: 10rem 0;
+}
+.error__title{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 12.43rem;
+}
+.error__desc{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(161, 161, 161, 1);
+}
+/************ error style end ************/
