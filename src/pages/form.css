@@ -1,0 +1,93 @@
+/********** coop-title style ***********/
+.coop-title{
+    text-align: center;
+    margin: 7rem 0;
+}
+.coop-title span{
+    text-align: center;
+    display: block;
+}
+.coop-title__title{
+    font-weight: 900;
+    font-size: 22px;
+    margin-bottom: 4rem;
+}
+.coop-title__mini-title{
+    font-weight: 400;
+    font-size: 14px;
+    color: #A1A1A1;
+}
+/********** coop-title style end ***********/
+
+
+/********** coop-form style ***********/
+.coop-form{
+    width: 73rem;
+    height: 54rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.coop-form__form{
+    display: grid;
+    grid-template-columns: repeat(2, 36.1rem);
+    grid-template-rows: repeat(3, 5.5rem);
+    gap: 2rem;
+}
+.coop-form__brief{
+    width: 72rem;
+    height: 20.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    text-align: right;
+    padding-right: 2rem;
+    position: relative;
+}
+.coop-form__brief::placeholder{
+    position: absolute;
+    top: 2rem;
+    right: 1.8rem;
+}
+.coop-form__form input[type="text"]{
+    width: 34rem;
+    height: 5.4rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    text-align: right;
+    padding-right: 2rem;
+}
+.coop-form input[type="button"]{
+    width: 9.5rem;
+    height: 5.5rem;
+    border-radius: 8px;
+    background-color: rgba(10, 10, 10, 1);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 2rem;
+}
+.coop-form__form--cname{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+.coop-form__form--csite{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.coop-form__form--cemail{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+.coop-form__form--cnumber{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.coop-form__form--uname{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+.coop-form__form--udir{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+/********** coop-form style end ***********/
