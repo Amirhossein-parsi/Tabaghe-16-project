@@ -91,3 +91,9 @@
     grid-row: 3 / span 1;
 }
 /********** coop-form style end ***********/
+
+/****************** footer style ****************/
+.footer{
+    margin-top: 20rem !important;
+}
+/****************** footer style end ****************/
