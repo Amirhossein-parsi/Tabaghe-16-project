@@ -125,7 +125,7 @@ input[type="search"]{
 }
 .header__nav--logo{
     height: 3.8rem;
-    width: 5rem;
+    width: 50px;
 }
 .header__nav--logo img{
     height: 100%;
@@ -238,7 +238,7 @@ input[type="search"]{
 /******************** best list style ******************/
 .best-list{
     display: grid;
-    grid-template-columns: repeat(4,25rem);
+    grid-template-columns: repeat(auto-fit,minmax(25rem,  1fr));
     grid-template-rows:  10rem 35rem;
     justify-content: center;
     margin-top: 3rem;
@@ -504,6 +504,21 @@ input[type="search"]{
     font-weight: 900;
     font-size: 2rem;
 }
+.shorts__more{
+    grid-column: 1 /  -1;
+    grid-row: 4 /span 1;
+    width: fit-content;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: all 0.25s ease;
+}
+.shorts__more:hover{
+    color: var(--secondary-color);
+}
 /******************** shorts style end ******************/
 
 
@@ -633,3 +648,335 @@ input[type="search"]{
     place-self: center;
 }
 /******************** footer style end ********************/
+
+
+/***************    **********responsive********   ************/
+
+
+@media screen and (max-width : 1000px) {
+    /***************** Header responsive ************/
+    .header{
+        width: 80%;
+    }
+    .header__nav{
+        flex-wrap: wrap;
+    }
+    .header__nav *{
+        flex-basis: 30%;
+    }
+    .header__nav div{
+        display: flex;
+        justify-content: flex-end;
+    }
+    /***************** Header responsive end ************/
+
+    /***************** Down header resposive **************/
+    .down-header{
+        width: 50rem;
+        position: relative;
+    }
+    .down-header__sirosali{
+        background-color: #121212ad;
+        border: none;
+    }
+    .down-header__gorgali{
+        position: absolute;
+        z-index: -1;
+        filter:opacity(0.3);
+    }
+    /***************** Down header resposive end **************/
+
+
+    /***************** icon-list resposive **************/
+    .icon-list{
+        width: 80%;
+        height: fit-content;
+    }
+    .icon-list__icons{
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    .icon-list__icons--icon{
+        flex-basis: 25%;
+    }
+    /***************** icon-list resposive end **************/
+
+
+    /***************** Best list resposive **************/
+    .best-list{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 4rem, 36rem, 36rem;
+        flex-wrap: wrap;
+    }
+    .g4{
+        grid-row: 3 / span 1;
+        grid-column: 4 / span 1;
+    }
+    .best-list__title{
+        width: fit-content;
+        grid-column: 3 / span 1;
+        justify-self: center;
+    }
+    /***************** Best list resposive end **************/
+
+
+    /***************** list Box resposive **************/
+    .list-box{
+        width: 80%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8,10rem);
+    }
+    .h1{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .h2{
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .h3{
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .h4{
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .h5{
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .h6{
+        grid-row: 7 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .list-box__more{
+        grid-row: 8 / span 1;
+    }
+    /***************** list Box resposive end **************/
+
+
+    /***************** Sponsor resposive **************/
+    .sponsors{
+        width: 80%;
+    }
+    /***************** Sponsor resposive end **************/
+
+
+    /***************** Shorts resposive **************/
+    .shorts{
+        grid-template-columns: 50rem;
+        grid-template-rows: 4rem repeat(4, 20rem);
+    }
+    .child1{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10.png");
+    }
+    .child2{
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10 (2).png");
+    }
+    .child3{
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10 (1).png");
+    }
+    .child4{
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+        background-image: url("./assets/Img/Home/ShortVideos/Rectangle 10 (3).png");
+    }
+    .shorts__more{
+        grid-row: 6 / span 1;
+    }
+    /***************** Shorts resposive end **************/
+
+
+    /***************** Join resposive **************/
+    .join{
+        width: 80%;
+        position: relative;
+    }
+    .join__img{
+        flex-basis: 100%;
+        border-radius: 35px;
+    }
+    .join__img img{
+        border-radius: 35px;
+        filter: grayscale(1) opacity(11%);
+    }
+    .join__desc{
+        position: absolute;
+        justify-content: center;
+        width: 84%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    /***************** Join resposive end **************/
+
+
+    /***************** Footer resposive **************/
+    .footer{
+        width: 80%;
+        grid-template-columns: 50% 20% 30%;
+    }
+    /***************** Footer resposive end **************/
+}
+@media screen and (max-width : 700px){
+    /**************** header resposive **************/
+    .header{
+        position: fixed;
+        height: fit-content;
+        background-color: #121212;
+        padding: var(--padding-d-m-h) var(--padding-d-m-v);
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        z-index: 10;
+    }
+    .header__nav{
+        background-color: #121212;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 2rem 0;
+        width: 100%;
+        max-width: 35rem;
+        position: fixed;
+        top: 2rem;
+        right: -35rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    .header__nav.active {
+        right: 2rem;
+    }
+    .header__nav div{
+        display: none;
+    }
+    .header__nav li{
+        display: block;
+    }
+    .header__hamburger{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 40%;
+    }
+    .header__hamburger span{
+        height: 5px;
+        width: 100%;
+        background-color: var(--secondary-color);
+        position: absolute;
+        border-radius: 15px;
+        transform: translate(-50%, 50%);
+        transition: all 0.5s ease;
+        z-index: 10;
+    }
+    .header__hamburger span:nth-child(1){
+        top: 25%;
+    }
+    .header__hamburger span:nth-child(2){
+        top: 75%;
+    }
+    .header__hamburger span:nth-child(3){
+        top: 50%;
+    }
+    .header__hamburger.active span{
+        color: var(--Primary-color);
+    }
+    .header__hamburger.active span:nth-child(1){
+        top: 50%;
+        transform: translate(-50%, 50%) rotate(45deg);
+    }
+    .header__hamburger.active span:nth-child(2){
+        opacity: 0;
+    }
+    .header__hamburger.active span:nth-child(3){
+        top: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
+    /**************** header resposive end **************/
+
+
+    /**************** Down header resposive **************/
+    .down-header{
+        width: 80%;
+    }
+    /**************** Down header resposive end **************/
+
+
+    /************** icon list responsive ************/
+    .icon-list{
+        width: fit-content;
+    }
+    .icon-list__icons{
+        flex-basis: 60%;
+        justify-content: center;
+    }
+    /************** icon list responsive end ************/
+
+
+    /************** sponsors responsive ************/
+    .sponsors__list{
+        flex-wrap: wrap;
+    }
+    /************** sponsors responsive end ************/
+
+
+    /************** Best list responsive ************/
+    .best-list{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 4rem, 36rem, 36rem, 36rem;
+        flex-wrap: wrap;
+    }
+    .g4{
+        grid-row: 3 / span 1;
+        grid-column: 3 / span 1;
+    }
+    .g3{
+        grid-row: 3 / span 1;
+        grid-column: 4 / span 1;
+    }
+    .best-list__title{
+        width: fit-content;
+        grid-column: 3 / span 2;
+        justify-self: center;
+    }
+    /************** Best list responsive end ************/
+
+
+    /************** Footer responsive ************/
+    .footer{
+        grid-template-rows: 15rem 15rem;
+    }
+    .footer__about--head{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__icons,
+    .footer__social{
+        height: fit-content;
+    }
+    .footer__icons div,
+    .footer__social div{
+        flex-wrap: wrap;
+    }
+    .footer__icons div *,
+    .footer__social div *{
+        flex-basis: 30%;
+        margin-top: 0.5rem;
+        align-self: center;
+        justify-self: center;
+    }
+    /************** Footer responsive end ************/
+}

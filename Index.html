@@ -11,8 +11,13 @@
 <body>
     <!---------- Header section ---------->
     <header class="header">
+        <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="header__nav">
-            <figure class="header__nav--logo"><a href="./Index.html"><img loading="lazy" src="./assets/Img/Home/Logo/Logo.png" alt="Logo"></a></figure>
+            <div><figure class="header__nav--logo"><a href="./Index.html"><img loading="lazy" src="./assets/Img/Home/Logo/Logo.png" alt="Logo"></a></figure></div>
             <li class="header__nav--links"><a class="header__nav--links" href="#">صفحه اصلی</a></li>
             <li class="header__nav--links"><a class="header__nav--links" href="./src/pages/list.html">پادکست ها</a></li>
             <li class="header__nav--links"><a class="header__nav--links" href="./src/pages/list.html">ویدیو های کوتاه</a></li>
@@ -205,7 +210,7 @@
             <h2 class="section__title shorts__links--title">مهارت مهم در استخدام</h2>
             <figure class="shorts__links--img"><img src="./assets/Img/Home/BestListBox/PlayCircle.png" alt=""></img></figure>
         </a>
-        <a href="./src/pages/list.html" class="list-box__more">مشاهده همه</a>
+        <a href="./src/pages/list.html" class="shorts__more">مشاهده همه</a>
     </section>
     <!------------- Shorts end ---------------->
 
@@ -230,7 +235,9 @@
     <footer class="footer">
         <div class="footer__about">
             <div class="footer__about--head">
-                <figure class="header__nav--logo"><img src="./assets/Img/Home/Logo/Logo.png" alt="logo"></figure>
+                <div>
+                    <figure class="header__nav--logo"><img src="./assets/Img/Home/Logo/Logo.png" alt="logo"></figure>
+                </div>
                 <h2 class="footer__about--head__title section-title">پادکست طبقه 16</h2>
             </div>
             <p class="footer__about--para">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
@@ -275,6 +282,9 @@
         </div>
     </footer>
     <!------------- footer end ------------>
+
+    <!------------- Javascript links ------------->
+    <script src="./main.js"></script>
 </body>
 
 </html>
